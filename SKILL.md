@@ -44,6 +44,17 @@ quantSkills:
   license: GPL-3.0
 ---
 
+```json qsh-form
+{
+  "version": 1,
+  "task": {
+    "placeholder": "提供待复现的论文、研报、PDF、网页、文本或研究主题，并说明目标市场与数据范围",
+    "required": true
+  },
+  "prompt_template": "{{#task}}任务与材料：\n{{task}}\n\n{{/task}}{{#attachments}}用户上传的材料（已放入工作区）：\n{{attachments}}\n\n{{/attachments}}按量化研究复现流程完成来源发现或登记、全文中文翻译、因子公式重建、真实可追溯数据验证、BACKTEST 策略生成与实际本地回测、对齐审计及最终交付摘要；所有图表和指标必须能追溯到产物，不能运行或数据不足的环节须如实标为未完成或结论不确定，并执行各阶段质量门禁，输出中文报告。"
+}
+```
+
 # Quant Research Replication BACKTEST
 
 ## Purpose
